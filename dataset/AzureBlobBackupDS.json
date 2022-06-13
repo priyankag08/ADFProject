@@ -19,7 +19,7 @@
 					"value": "@concat(dataset().TableName,'_',utcnow(),'.csv')",
 					"type": "Expression"
 				},
-				"folderPath": "OutputFolder",
+				"folderPath": "Output",
 				"container": "miniproject"
 			},
 			"columnDelimiter": ",",
