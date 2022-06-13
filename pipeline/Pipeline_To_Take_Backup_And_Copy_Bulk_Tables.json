@@ -25,15 +25,15 @@
 						"referenceName": "SqlServerTableDS",
 						"type": "DatasetReference",
 						"parameters": {
-							"serverName": {
+							"server_name": {
 								"value": "@pipeline().parameters.serverName",
 								"type": "Expression"
 							},
-							"userName": {
+							"user_name": {
 								"value": "@pipeline().parameters.uName",
 								"type": "Expression"
 							},
-							"password": {
+							"pass_word": {
 								"value": "@pipeline().parameters.pass",
 								"type": "Expression"
 							}
@@ -59,6 +59,7 @@
 						"value": "@activity('Table List').output.value",
 						"type": "Expression"
 					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "TableBackupActivity",

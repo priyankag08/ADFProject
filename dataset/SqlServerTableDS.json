@@ -3,16 +3,30 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SQLServerLS",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ServerName": {
+					"value": "@dataset().server_name",
+					"type": "Expression"
+				},
+				"UserName": {
+					"value": "@dataset().user_name",
+					"type": "Expression"
+				},
+				"SqlPassword": {
+					"value": "@dataset().pass_word",
+					"type": "Expression"
+				}
+			}
 		},
 		"parameters": {
-			"serverName": {
+			"server_name": {
 				"type": "string"
 			},
-			"userName": {
+			"user_name": {
 				"type": "string"
 			},
-			"password": {
+			"pass_word": {
 				"type": "string"
 			}
 		},
