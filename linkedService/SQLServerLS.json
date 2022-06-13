@@ -4,16 +4,13 @@
 	"properties": {
 		"parameters": {
 			"ServerName": {
-				"type": "String",
-				"defaultValue": "TMGLAP269"
+				"type": "String"
 			},
 			"UserName": {
-				"type": "String",
-				"defaultValue": "Rohit"
+				"type": "String"
 			},
 			"SqlPassword": {
-				"type": "String",
-				"defaultValue": "amol@6969"
+				"type": "String"
 			}
 		},
 		"annotations": [],
