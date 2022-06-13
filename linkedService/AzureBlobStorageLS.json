@@ -1,0 +1,12 @@
+{
+	"name": "AzureBlobStorageLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=adfminiprojectstorage;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDUyNjhGNDRFLUVBNjMtNDk3NC1BMTY5LUI0M0VFRjYwODQwRl9jY2M3ZWVlNi01ZGI1LTQzNzQtYTJmMS02YzYwODYyNDNlMmMiDQp9"
+		}
+	}
+}
