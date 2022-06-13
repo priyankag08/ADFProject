@@ -1,0 +1,26 @@
+{
+	"name": "SQLServerLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"ServerName": {
+				"type": "String"
+			},
+			"UserName": {
+				"type": "String"
+			},
+			"SqlPassword": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=@{linkedService().ServerName};Initial Catalog=ADFDB;User ID=@{linkedService().UserName};Password=@{linkedService().SqlPassword}"
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
