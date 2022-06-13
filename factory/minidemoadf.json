@@ -1,0 +1,9 @@
+{
+	"name": "minidemoadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7f9d825c-7bf0-4434-b403-eb15196ab54d",
+		"tenantId": "57084445-e440-441f-bc3f-fabe8cbb2535"
+	}
+}
