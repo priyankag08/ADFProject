@@ -1,0 +1,26 @@
+{
+	"name": "SqlServerTableDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServerLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"serverName": {
+				"type": "string"
+			},
+			"userName": {
+				"type": "string"
+			},
+			"password": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo"
+		}
+	}
+}

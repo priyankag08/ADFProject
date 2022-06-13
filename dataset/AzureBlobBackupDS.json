@@ -1,0 +1,32 @@
+{
+	"name": "AzureBlobBackupDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat(dataset().TableName,'_',utcnow(),'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": "OutputFolder",
+				"container": "miniproject"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
